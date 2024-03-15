@@ -1,0 +1,50 @@
+.box {
+  position: relative;
+  width: 50rem;
+  height: 5rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 2rem;
+}
+
+.box input {
+  border: none;
+  width: 90%;
+  height: 100%;
+  font-size: 2.2rem;
+  font-family: "maplestory";
+  letter-spacing: 0.1rem;
+  outline: none;
+}
+
+.box button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.box button:hover .icon {
+  color: #7fffd4;
+}
+
+.icon {
+  font-size: 3rem;
+  color: rgba(32, 32, 32, 0.7);
+  transition: 250ms all ease-in-out;
+}
+
+.search_result_box {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 50rem;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem 1rem 0 1rem;
+}

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "maplestory";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./Maplestory\ OTF\ Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "maplestory";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./Maplestory\ OTF\ Bold.otf") format("opentype");
+}

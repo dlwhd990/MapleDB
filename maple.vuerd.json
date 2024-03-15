@@ -1,0 +1,1414 @@
+{
+  "canvas": {
+    "version": "2.2.13",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -507.70870000000014,
+    "scrollLeft": -1430,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "id": "7cee770a-b59e-4175-be06-cee3e78e164a",
+        "name": "monster",
+        "comment": "몬스터",
+        "columns": [
+          {
+            "id": "a31340d8-1544-40c3-bf24-c0a7934a6ffc",
+            "name": "id",
+            "comment": "몬스터 아이디",
+            "dataType": "INT",
+            "default": "AUTO_INCREMENT",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 72.88896179199219,
+              "widthDataType": 60,
+              "widthDefault": 105.73989868164062
+            }
+          },
+          {
+            "id": "701d5a03-67b4-4b14-9de0-9a2e79224dfe",
+            "name": "name",
+            "comment": "몬스터 이름",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 78.88189697265625,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "4df0642e-2cc5-4014-8664-21425e1b5cc4",
+            "name": "image",
+            "comment": "몬스터 이미지",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 72.88896179199219,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1.1111,
+          "top": 245,
+          "zIndex": 5,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#0026FF"
+        },
+        "visible": true
+      },
+      {
+        "id": "ef7847de-0c69-4d0c-a481-24467f5c07d6",
+        "name": "item",
+        "comment": "드랍 아이템",
+        "columns": [
+          {
+            "id": "68303c85-d2aa-4d72-9274-bf067e20a61f",
+            "name": "id",
+            "comment": "아이템 아이디",
+            "dataType": "INT",
+            "default": "AUTO_INCREMENT",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 72.88896179199219,
+              "widthDataType": 60,
+              "widthDefault": 105.73989868164062
+            }
+          },
+          {
+            "id": "1f142274-c2f8-419c-bf85-83cd67cbf1a5",
+            "name": "name",
+            "comment": "아이템 이름",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 78.88189697265625,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "87db964c-d903-468e-8a03-e76ad99e2444",
+            "name": "kind",
+            "comment": "아이템 분류",
+            "dataType": "VARCHAR(10)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 77.035888671875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "15a03a4f-40fc-42be-bdf5-362722ef713e",
+            "name": "price",
+            "comment": "상점 판매 가격",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 76.30795288085938,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "8be8a4e4-b88e-40e5-846f-d9700e006b97",
+            "name": "image",
+            "comment": "아이템 이미지",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 72.88896179199219,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "1318dc9b-eecb-4883-8d04-f12ddcfdbc17",
+            "name": "description",
+            "comment": "아이템 설명",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62.77488708496094,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1041.2223,
+          "top": 285.6673,
+          "zIndex": 4,
+          "widthName": 60,
+          "widthComment": 61.64396667480469,
+          "color": "#F6FF00"
+        },
+        "visible": true
+      },
+      {
+        "id": "00299d79-3dba-4f6d-a3f8-e3760dd9d163",
+        "name": "monster_item",
+        "comment": "몬스터-아이템 연결 테이블",
+        "columns": [
+          {
+            "id": "57fdaf74-974d-43f7-9f6d-d88ad40cd321",
+            "name": "id",
+            "comment": "연결 항목 아이디",
+            "dataType": "INT",
+            "default": "AUTO_INCREMENT",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 87.55294799804688,
+              "widthDataType": 60,
+              "widthDefault": 105.73989868164062
+            }
+          },
+          {
+            "id": "607764ab-7e20-4e15-a468-b560c03bdb6d",
+            "name": "monster_id",
+            "comment": "몬스터 아이디",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 61.69590759277344,
+              "widthComment": 72.88896179199219,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "c1cecd15-a01b-4ede-a472-a91cf1dbd004",
+            "name": "item_id",
+            "comment": "아이템 아이디",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 72.88896179199219,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 521.2783,
+          "top": 306.2573,
+          "zIndex": 1,
+          "widthName": 76.09989929199219,
+          "widthComment": 120,
+          "color": "#D81A1A"
+        },
+        "visible": true
+      },
+      {
+        "id": "44307a4e-a5b9-43ab-93d5-4d46771439f8",
+        "name": "item_ability",
+        "comment": "아이템 능력치",
+        "columns": [
+          {
+            "id": "a3459e06-93df-4964-a26a-84dc9333e46f",
+            "name": "id",
+            "comment": "아이템 능력치 아이디",
+            "dataType": "INT",
+            "default": "AUTO_INCREMENT",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 110.04293823242188,
+              "widthDataType": 60,
+              "widthDefault": 105.73989868164062
+            }
+          },
+          {
+            "id": "dbaf4b46-9a62-4346-a8ec-c26633f7c407",
+            "name": "attack",
+            "comment": "공격력",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "b48657cc-850c-4284-916f-eb2aaf779a5e",
+            "name": "magic",
+            "comment": "마력",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "7ce95c46-9fed-4a14-a0a3-a4fe7792a161",
+            "name": "strong",
+            "comment": "힘",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "ba72b7e9-5305-4b72-89ff-17446626129a",
+            "name": "dex",
+            "comment": "민첩",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "ea181719-3f23-4423-921d-c19d1139487d",
+            "name": "intel",
+            "comment": "지력",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "2166b98b-c30b-4594-a775-d45e9481653d",
+            "name": "luk",
+            "comment": "행운",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "c41d7230-de65-4173-aa10-a404288f7612",
+            "name": "move_speed",
+            "comment": "이동속도",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.20994567871094,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "6ee314cb-5996-486b-9716-4725ba7bfcdb",
+            "name": "jump",
+            "comment": "점프력",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "aefec77f-ec2c-4a44-8ebb-9dd525dcf505",
+            "name": "acc",
+            "comment": "명중률",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "c84b054b-65f9-41c8-9224-aab22b2ab3fb",
+            "name": "avoid",
+            "comment": "회피율",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "295b0a09-2d5f-486c-9a98-2c6f34fcc37c",
+            "name": "attack_speed",
+            "comment": "공격속도",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.2388916015625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "f043673d-c2fc-4ce0-a4f4-6a4563eb8745",
+            "name": "upgrade_cnt",
+            "comment": "업그레이드 가능 횟수",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 68.36489868164062,
+              "widthComment": 110.04293823242188,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "e9bb9dd8-8373-4ad8-bb20-1d21ac5ab18c",
+            "name": "item_id",
+            "comment": "아이템 아이디",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 72.88896179199219,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1539.9783,
+          "top": 608.1377,
+          "zIndex": 2,
+          "widthName": 63.69789123535156,
+          "widthComment": 72.88896179199219,
+          "color": "#00FF2F"
+        },
+        "visible": true
+      },
+      {
+        "id": "8ddb863b-619c-4d68-bf8e-b90a565e4d6c",
+        "name": "item_require",
+        "comment": "아이템 요구치",
+        "columns": [
+          {
+            "id": "54e398cc-2707-42fe-817a-10f64610c954",
+            "name": "id",
+            "comment": "아이템 요구치 아이디",
+            "dataType": "INT",
+            "default": "AUTO_INCREMENT",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 110.04293823242188,
+              "widthDataType": 60,
+              "widthDefault": 105.73989868164062
+            }
+          },
+          {
+            "id": "d5226243-487b-4629-a639-97f3bd8615e1",
+            "name": "req_level",
+            "comment": "요구 레벨",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "ea983dc3-276a-4f19-b060-653d4a45452f",
+            "name": "req_strong",
+            "comment": "요구 힘",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "7e811488-272c-4d3c-961d-a06438538457",
+            "name": "req_dex",
+            "comment": "요구 민첩",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "af9f4e88-c6b0-4391-9d37-81aa4c967611",
+            "name": "req_intel",
+            "comment": "요구 지력",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "150bd086-d70d-4528-92ca-9e8471ee80a5",
+            "name": "req_luk",
+            "comment": "요구 행운",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "bacd3b75-571d-42b8-8538-e1a5572427a7",
+            "name": "req_pop",
+            "comment": "요구 인기도",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "7b15f1c0-79a5-4c42-ab47-371ca002dd84",
+            "name": "poss_beginner",
+            "comment": "초보자 가능 여부",
+            "dataType": "BOOLEAN",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 79.23287963867188,
+              "widthComment": 87.55294799804688,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "7530f9fe-aa27-424b-830d-23f6a47e393e",
+            "name": "poss_warrior",
+            "comment": "전사 가능 여부",
+            "dataType": "BOOLEAN",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.97685241699219,
+              "widthComment": 76.30795288085938,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "5de982e6-aa8c-4367-9bf1-a754e1d356bd",
+            "name": "poss_bowman",
+            "comment": "궁수 가능 여부",
+            "dataType": "BOOLEAN",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 78.21888732910156,
+              "widthComment": 76.30795288085938,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "9341b9d3-a489-4c21-a928-569668de50df",
+            "name": "poss_magician",
+            "comment": "마법사 가능 여부",
+            "dataType": "BOOLEAN",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 79.12886047363281,
+              "widthComment": 87.55294799804688,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "16db5521-5a7a-4320-9510-cdb1ede2cc93",
+            "name": "poss_thief",
+            "comment": "도적 가능 여부",
+            "dataType": "BOOLEAN",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 76.30795288085938,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "eae823a5-03f8-49a3-a7dd-5f84d3145847",
+            "name": "item_id",
+            "comment": "아이템 아이디",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 72.88896179199219,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 1011.9843,
+          "top": 595.1377,
+          "zIndex": 8,
+          "widthName": 69.69091796875,
+          "widthComment": 72.88896179199219,
+          "color": "#42FF00"
+        },
+        "visible": true
+      },
+      {
+        "id": "968a76bf-5fbe-4d07-81d1-634e3ba9a449",
+        "name": "monster_info",
+        "comment": "몬스터 상세 정보",
+        "columns": [
+          {
+            "id": "5cbc3d71-9694-406d-bb8e-c1816b60caf2",
+            "name": "id",
+            "comment": "몬스터 상세 정보 아이디",
+            "dataType": "INT",
+            "default": "AUTO_INCREMENT",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 105.73989868164062
+            }
+          },
+          {
+            "id": "062b4ae6-e249-4600-be0c-4fe47f133366",
+            "name": "level",
+            "comment": "몬스터 레벨",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "a48c4f52-2778-4459-99ca-739fb940bc34",
+            "name": "hp",
+            "comment": "몬스터 체력",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "b0f7cbcb-4e68-4cff-835f-865dcac4a31b",
+            "name": "mp",
+            "comment": "몬스터 마나",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "b5a62c46-b800-47fc-aa1b-df870cc2a2ad",
+            "name": "exp",
+            "comment": "몬스터 경험치",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 72.88896179199219,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "bc63df68-ea0c-469d-8779-cb5f614ac43e",
+            "name": "max_meso",
+            "comment": "최대 드랍 메소",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 76.30795288085938,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "1d4a4384-214f-40de-aeea-b515cc6b6003",
+            "name": "min_meso",
+            "comment": "최소 드랍 메소",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 76.30795288085938,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "3321e28f-0894-4d5b-809a-c5638d048c58",
+            "name": "phy_defense",
+            "comment": "물리 방어력",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.83392333984375,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "3b071d14-6eab-4827-aee4-69b1fe31b0eb",
+            "name": "mag_defense",
+            "comment": "마법 방어력",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.60292053222656,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "86d197c8-b1e2-4fc9-b713-b71c1ef7df55",
+            "name": "monster_id",
+            "comment": "몬스터 아이디",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 61.69590759277344,
+              "widthComment": 72.88896179199219,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 0,
+          "top": 456.4713,
+          "zIndex": 6,
+          "widthName": 72.71987915039062,
+          "widthComment": 87.55294799804688,
+          "color": "#00FF26"
+        },
+        "visible": true
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "id": "97213d36-3de2-4083-8e7f-8c188aa42381",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "7cee770a-b59e-4175-be06-cee3e78e164a",
+          "columnIds": [
+            "a31340d8-1544-40c3-bf24-c0a7934a6ffc"
+          ],
+          "x": 425.6218574462891,
+          "y": 310.25,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "00299d79-3dba-4f6d-a3f8-e3760dd9d163",
+          "columnIds": [
+            "607764ab-7e20-4e15-a468-b560c03bdb6d"
+          ],
+          "x": 521.2783,
+          "y": 371.5073,
+          "direction": "left"
+        },
+        "constraintName": "fk_monster_to_monster_item",
+        "visible": true
+      },
+      {
+        "id": "9edf01f1-1bf2-41d9-b3e0-4288f40abcb4",
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "ef7847de-0c69-4d0c-a481-24467f5c07d6",
+          "columnIds": [
+            "68303c85-d2aa-4d72-9274-bf067e20a61f"
+          ],
+          "x": 1041.2223,
+          "y": 381.6673,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "00299d79-3dba-4f6d-a3f8-e3760dd9d163",
+          "columnIds": [
+            "c1cecd15-a01b-4ede-a472-a91cf1dbd004"
+          ],
+          "x": 943.2670542724609,
+          "y": 371.5073,
+          "direction": "right"
+        },
+        "constraintName": "fk_item_to_monster_item",
+        "visible": true
+      },
+      {
+        "id": "bfb5f098-caf7-4734-9654-34e043495b26",
+        "identification": false,
+        "relationshipType": "ZeroOne",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "ef7847de-0c69-4d0c-a481-24467f5c07d6",
+          "columnIds": [
+            "68303c85-d2aa-4d72-9274-bf067e20a61f"
+          ],
+          "x": 1256.5746178100585,
+          "y": 477.6673,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "8ddb863b-619c-4d68-bf8e-b90a565e4d6c",
+          "columnIds": [
+            "eae823a5-03f8-49a3-a7dd-5f84d3145847"
+          ],
+          "x": 1242.9921582763673,
+          "y": 595.1377,
+          "direction": "top"
+        },
+        "constraintName": "fk_item_to_item_require",
+        "visible": true
+      },
+      {
+        "id": "99e38db8-55ef-4c43-939e-2b328d965e79",
+        "identification": false,
+        "relationshipType": "ZeroOne",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "ef7847de-0c69-4d0c-a481-24467f5c07d6",
+          "columnIds": [
+            "68303c85-d2aa-4d72-9274-bf067e20a61f"
+          ],
+          "x": 1471.926935620117,
+          "y": 381.6673,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "44307a4e-a5b9-43ab-93d5-4d46771439f8",
+          "columnIds": [
+            "e9bb9dd8-8373-4ad8-bb20-1d21ac5ab18c"
+          ],
+          "x": 1767.4891642578125,
+          "y": 608.1377,
+          "direction": "top"
+        },
+        "constraintName": "fk_item_to_item_ability",
+        "visible": true
+      },
+      {
+        "id": "96bebbb6-0631-4dca-97f7-f1ef501ee45c",
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "7cee770a-b59e-4175-be06-cee3e78e164a",
+          "columnIds": [
+            "a31340d8-1544-40c3-bf24-c0a7934a6ffc"
+          ],
+          "x": 213.36647872314452,
+          "y": 375.5,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "968a76bf-5fbe-4d07-81d1-634e3ba9a449",
+          "columnIds": [
+            "86d197c8-b1e2-4fc9-b713-b71c1ef7df55"
+          ],
+          "x": 232.6714096069336,
+          "y": 456.4713,
+          "direction": "top"
+        },
+        "constraintName": "fk_monster_to_monster_info",
+        "visible": true
+      }
+    ]
+  }
+}

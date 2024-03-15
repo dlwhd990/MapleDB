@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  padding: 2rem 3rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.outer_button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.outer_button:hover .icon {
+  color: #7fffd4;
+}
+
+.icon {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  transition: 250ms all ease-in-out;
+}
