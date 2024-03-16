@@ -27,7 +27,10 @@ const SearchBox = () => {
   };
 
   useEffect(() => {
-    loadSearchResult();
+    const debounceHandler = setTimeout(() => {
+      loadSearchResult();
+    }, 200);
+    return () => clearTimeout(debounceHandler);
   }, [query]);
 
   return (
