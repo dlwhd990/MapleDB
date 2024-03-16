@@ -8,13 +8,15 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <header className={styles.header}>
-      <button className={styles.outer_button} onClick={() => navigate("/")}>
-        <FontAwesomeIcon icon={faHome} className={styles.icon} />
-      </button>
-      <SearchBox />
-      <button className={styles.outer_button}>
-        <FontAwesomeIcon icon={faBars} className={styles.icon} />
-      </button>
+      <div className={styles.container}>
+        <button className={styles.outer_button} onClick={() => navigate("/")}>
+          <FontAwesomeIcon icon={faHome} className={styles.icon} />
+        </button>
+        <SearchBox />
+        <button className={styles.outer_button}>
+          <FontAwesomeIcon icon={faBars} className={styles.icon} />
+        </button>
+      </div>
     </header>
   );
 };

@@ -19,8 +19,7 @@ public class MonsterService {
     return (List<Monster>) monsterRepo.findAll();
   }
 
-  // 아이디로 몬스터 상세 정보 출력 (기본 => 상세로 수정 필요)
-  // join => mapping
+  // 아이디로 몬스터 상세 정보 출력
   public Monster findMonsterInfoById(Long id) {
     return monsterRepo.findById(id).orElse(null);
   }

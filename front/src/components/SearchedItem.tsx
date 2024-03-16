@@ -2,13 +2,15 @@ import { useNavigate } from "react-router-dom";
 import styles from "../styles/SearchedItem.module.css";
 import { Item, Monster } from "../types/interface";
 
-const SearchedItem: React.FC<{ type: String; item: Monster | Item }> = ({
-  type,
-  item,
-}) => {
+const SearchedItem: React.FC<{
+  type: String;
+  item: Monster | Item;
+  clearQuery: () => void;
+}> = ({ type, item, clearQuery }) => {
   const navigate = useNavigate();
 
   const moveToDetail = () => {
+    clearQuery();
     navigate(`/${type}/detail/${item.id}`);
   };
 

@@ -6,6 +6,11 @@ html {
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+  word-break: keep-all;
+}
+
 body {
   margin: 0;
   font-family: "maplestory", sans-serif;

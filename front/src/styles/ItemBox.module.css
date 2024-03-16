@@ -1,0 +1,61 @@
+.box {
+  padding: 1rem 3rem 1.5rem 3rem;
+  background-color: #fcd5de;
+  border-radius: 10px;
+  margin-bottom: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.simple {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.name {
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.data_container {
+  width: 80%;
+  height: 100%;
+}
+
+.price {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.desc {
+  font-size: 2rem;
+}
+
+.equip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ability,
+.require {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ability h3,
+.require h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

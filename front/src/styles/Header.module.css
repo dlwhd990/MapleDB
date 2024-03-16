@@ -4,11 +4,17 @@
   top: 0;
   left: 0;
   background-color: transparent;
-  padding: 2rem 3rem;
   z-index: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 110rem;
+  padding: 2rem 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .outer_button {

@@ -5,8 +5,10 @@ const ItemDetailPage = () => {
   return (
     <main className={styles.item_page}>
       <Header />
-      <section className={styles.item_info}></section>
-      <section className={styles.monster_info}></section>
+      <div className={styles.container}>
+        <section className={styles.item_info}></section>
+        <section className={styles.monster_info}></section>
+      </div>
     </main>
   );
 };

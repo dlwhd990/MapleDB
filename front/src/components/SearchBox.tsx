@@ -15,6 +15,10 @@ const SearchBox = () => {
     setQuery(newQuery);
   };
 
+  const clearQuery = () => {
+    setQuery("");
+  };
+
   const loadSearchResult = () => {
     if (query === "") {
       setMonsterList([]);
@@ -50,13 +54,23 @@ const SearchBox = () => {
       {(monsterList.length > 0 || itemList.length > 0) && (
         <div className={styles.search_result_box}>
           {monsterList.slice(0, 3).map((item: Monster) => (
-            <SearchedItem key={item.id.toString()} type="monster" item={item} />
+            <SearchedItem
+              key={item.id.toString()}
+              type="monster"
+              item={item}
+              clearQuery={clearQuery}
+            />
           ))}
           {monsterList.length > 0 && itemList.length > 0 && (
             <div className={styles.divide_line}></div>
           )}
           {itemList.slice(0, 3).map((item: Item) => (
-            <SearchedItem key={item.id.toString()} type="item" item={item} />
+            <SearchedItem
+              key={item.id.toString()}
+              type="item"
+              item={item}
+              clearQuery={clearQuery}
+            />
           ))}
         </div>
       )}

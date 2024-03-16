@@ -14,11 +14,11 @@ public class Monster {
   private String image;
 
   @OneToOne(mappedBy = "monster")
-  private MonsterInfo monsterinfo;
+  private MonsterInfo monster_info;
   
   @Override
   public String toString() {
-    return "Monster [id=" + id + ", name=" + name + ", image=" + image + ", monsterinfo=" + monsterinfo + "]";
+    return "Monster [id=" + id + ", name=" + name + ", image=" + image + ", monsterinfo=" + monster_info + "]";
   }
 
 
@@ -47,13 +47,15 @@ public class Monster {
     this.image = image;
   }
 
-  public MonsterInfo getMonsterinfo() {
-    return monsterinfo;
+  public MonsterInfo getMonster_info() {
+    return monster_info;
   }
 
-  public void setMonsterinfo(MonsterInfo monsterinfo) {
-    this.monsterinfo = monsterinfo;
+  public void setMonster_info(MonsterInfo monster_info) {
+    this.monster_info = monster_info;
   }
+
+
 
   
 

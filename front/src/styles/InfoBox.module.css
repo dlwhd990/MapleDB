@@ -1,0 +1,16 @@
+.box {
+  width: 100%;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  background-color: #f4ebed;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.box p {
+  font-size: 1.5rem;
+}
