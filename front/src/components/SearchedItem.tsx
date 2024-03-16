@@ -1,15 +1,19 @@
 import { useNavigate } from "react-router-dom";
 import styles from "../styles/SearchedItem.module.css";
-import { Monster } from "../types/interface";
+import { Item, Monster } from "../types/interface";
 
-// 3월 16일 monster, item 인터페이스 작성 후 여기 채워넣기부터 시작
-const SearchedItem: React.FC<{ item: Monster }> = ({ item }) => {
+const SearchedItem: React.FC<{ type: String; item: Monster | Item }> = ({
+  type,
+  item,
+}) => {
   const navigate = useNavigate();
+
+  const moveToDetail = () => {
+    navigate(`/${type}/detail/${item.id}`);
+  };
+
   return (
-    <div
-      className={styles.box}
-      onClick={() => navigate(`/monster/detail/${item.id}`)}
-    >
+    <div className={styles.box} onClick={moveToDetail}>
       <img src={`${item.image}`} alt="searched_item" />
       <p>{item.name}</p>
     </div>

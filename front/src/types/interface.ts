@@ -17,3 +17,12 @@ export interface MonsterInfo {
   mag_defense: Number;
   monster_id: Number;
 }
+
+export interface Item {
+  id: Number;
+  name: String;
+  kind: String;
+  price: Number;
+  image: String;
+  description: String;
+}

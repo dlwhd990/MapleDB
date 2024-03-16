@@ -4,11 +4,12 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import SearchedItem from "./SearchedItem";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Monster } from "../types/interface";
+import { Item, Monster } from "../types/interface";
 
 const SearchBox = () => {
   const [query, setQuery] = useState("");
-  const [resultList, setResultList] = useState([]);
+  const [monsterList, setMonsterList] = useState([]);
+  const [itemList, setItemList] = useState([]);
 
   const changeQuery = (newQuery: string) => {
     setQuery(newQuery);
@@ -16,13 +17,16 @@ const SearchBox = () => {
 
   const loadSearchResult = () => {
     if (query === "") {
-      setResultList([]);
+      setMonsterList([]);
+      setItemList([]);
       return;
     }
 
     axios
       .get(`/monster?search=${query}`)
-      .then((res) => setResultList(res.data))
+      .then((res) => setMonsterList(res.data))
+      .then(() => axios.get(`/item?search=${query}`))
+      .then((res) => setItemList(res.data))
       .catch((err) => console.error(err));
   };
 
@@ -43,10 +47,16 @@ const SearchBox = () => {
       <button>
         <FontAwesomeIcon icon={faSearch} className={styles.icon} />
       </button>
-      {resultList.length > 0 && (
+      {(monsterList.length > 0 || itemList.length > 0) && (
         <div className={styles.search_result_box}>
-          {resultList.map((item: Monster) => (
-            <SearchedItem item={item} />
+          {monsterList.slice(0, 3).map((item: Monster) => (
+            <SearchedItem key={item.id.toString()} type="monster" item={item} />
+          ))}
+          {monsterList.length > 0 && itemList.length > 0 && (
+            <div className={styles.divide_line}></div>
+          )}
+          {itemList.slice(0, 3).map((item: Item) => (
+            <SearchedItem key={item.id.toString()} type="item" item={item} />
           ))}
         </div>
       )}
