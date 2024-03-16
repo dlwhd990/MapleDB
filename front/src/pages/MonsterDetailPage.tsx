@@ -61,15 +61,15 @@ const MonsterDetailPage = () => {
           <div className={styles.item_container}>
             {dropList &&
               dropList.map((item) => (
-                <ItemBox key={item.id.toString()} item={item} />
+                <ItemBox key={item.id.toString()} item={item} color="#fcd5de" />
               ))}
             {dropList &&
               dropList.map((item) => (
-                <ItemBox key={item.id.toString()} item={item} />
+                <ItemBox key={item.id.toString()} item={item} color="#fcd5de" />
               ))}
             {dropList &&
               dropList.map((item) => (
-                <ItemBox key={item.id.toString()} item={item} />
+                <ItemBox key={item.id.toString()} item={item} color="#fcd5de" />
               ))}
           </div>
         </section>

@@ -15,15 +15,24 @@
 }
 
 .item_page section {
-  min-height: 70vh;
-  background-color: white;
   border-radius: 12px;
 }
 
 .monster_info {
-  width: 20%;
+  background-color: white;
+  width: 30%;
 }
 
 .item_info {
-  width: 78%;
+  width: 68%;
+}
+
+.monster_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.monster_info h3 {
+  font-size: 2rem;
 }

@@ -1,12 +1,15 @@
 .box {
   padding: 1rem 3rem 1.5rem 3rem;
-  background-color: #fcd5de;
   border-radius: 10px;
   margin-bottom: 1.6rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.box img {
+  cursor: pointer;
 }
 
 .simple {
@@ -21,11 +24,13 @@
   font-size: 1.8rem;
   padding-top: 2rem;
   text-align: center;
+  cursor: pointer;
 }
 
 .data_container {
   width: 80%;
   height: 100%;
+  padding-left: 5rem;
 }
 
 .price {

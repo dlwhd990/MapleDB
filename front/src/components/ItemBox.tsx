@@ -1,13 +1,24 @@
+import { useNavigate } from "react-router-dom";
 import styles from "../styles/ItemBox.module.css";
 import { Item } from "../types/interface";
 import InfoBox from "./InfoBox";
 
-const ItemBox: React.FC<{ item: Item }> = ({ item }) => {
+const ItemBox: React.FC<{ item: Item; color: String }> = ({ item, color }) => {
+  const navigate = useNavigate();
   return (
-    <div className={styles.box}>
+    <div className={styles.box} style={{ backgroundColor: `${color}` }}>
       <div className={styles.simple}>
-        <img src={`${item.image}`} alt="item_image" />
-        <p className={styles.name}>{item.name}</p>
+        <img
+          src={`${item.image}`}
+          alt="item_image"
+          onClick={() => navigate(`/item/detail/${item.id}`)}
+        />
+        <p
+          className={styles.name}
+          onClick={() => navigate(`/item/detail/${item.id}`)}
+        >
+          {item.name}
+        </p>
         <p className={styles.price}>{`${item.price.toLocaleString()} 메소`}</p>
       </div>
       <div className={styles.data_container}>
