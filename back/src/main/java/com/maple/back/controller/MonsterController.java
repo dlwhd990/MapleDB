@@ -38,4 +38,8 @@ public class MonsterController {
     return monsterService.searchMonster(search);
   }
   
+  @GetMapping(path="/monster/drop",params="itemid")
+  public List<Monster> searchDropMonster (@RequestParam Long itemid) {
+    return monsterService.searchDropMonster(itemid);
+  }
 }

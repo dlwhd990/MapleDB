@@ -20,6 +20,10 @@ public class MonsterItem {
   @JoinColumn(name="item", nullable = false)
   private Item item;
 
+  @ManyToOne
+  @JoinColumn(name="monster", nullable = false)
+  private Monster monster;
+
   public Integer getId() {
     return id;
   }
@@ -38,6 +42,8 @@ public class MonsterItem {
   public void setItem_id(Integer item_id) {
     this.item_id = item_id;
   }
+
+  
 
   
 }

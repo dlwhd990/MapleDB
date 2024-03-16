@@ -63,14 +63,6 @@ const MonsterDetailPage = () => {
               dropList.map((item) => (
                 <ItemBox key={item.id.toString()} item={item} color="#fcd5de" />
               ))}
-            {dropList &&
-              dropList.map((item) => (
-                <ItemBox key={item.id.toString()} item={item} color="#fcd5de" />
-              ))}
-            {dropList &&
-              dropList.map((item) => (
-                <ItemBox key={item.id.toString()} item={item} color="#fcd5de" />
-              ))}
           </div>
         </section>
       </div>

@@ -1,0 +1,26 @@
+.box {
+  width: 100%;
+  background-color: #e0fafa;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.data_container {
+  padding-left: 2rem;
+}
+
+.name {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.level {
+  margin-top: 0.6rem;
+  margin-left: 0.2rem;
+  font-size: 1.4rem;
+}

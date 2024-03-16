@@ -3,18 +3,25 @@ package com.maple.back.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
+import java.util.List;
 
 @Entity
 public class Monster {
   @Id
   @GeneratedValue
+  
   private Integer id;
   private String name;
   private String image;
 
   @OneToOne(mappedBy = "monster")
   private MonsterInfo monster_info;
+
+  @OneToMany(mappedBy = "monster")
+  private List<MonsterItem> monsterItem; 
+
   
   @Override
   public String toString() {

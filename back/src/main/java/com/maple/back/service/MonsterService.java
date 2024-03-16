@@ -28,4 +28,9 @@ public class MonsterService {
   public List<MonsterSimple> searchMonster (String query) {
     return monsterRepo.searchMonster(query);
   }
+
+  // 아이템 아이디로 드랍 몬스터 목록 불러오기
+  public List<Monster> searchDropMonster (Long monster_id) {
+    return monsterRepo.searchDropMonster(monster_id);
+  }
 }
