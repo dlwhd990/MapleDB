@@ -9,7 +9,9 @@ const MonsterBox: React.FC<{ monster: Monster }> = ({ monster }) => {
       className={styles.box}
       onClick={() => navigate(`/monster/detail/${monster.id}`)}
     >
-      <img src={`${monster.image}`} alt="monster_image" />
+      <div className={styles.image_container}>
+        <img src={`${monster.image}`} alt="monster_image" />
+      </div>
       <div className={styles.data_container}>
         <p className={styles.name}>{monster.name}</p>
         <p className={styles.level}>{`LV.${monster.monster_info.level}`}</p>

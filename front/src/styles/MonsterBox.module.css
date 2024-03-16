@@ -1,5 +1,6 @@
 .box {
   width: 100%;
+  height: 8rem;
   background-color: #e0fafa;
   margin-bottom: 1rem;
   border-radius: 10px;
@@ -8,6 +9,16 @@
   flex-direction: row;
   align-items: center;
   cursor: pointer;
+}
+
+.box img {
+  height: 4rem;
+}
+
+.image_container {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 2rem;
 }
 
 .data_container {
