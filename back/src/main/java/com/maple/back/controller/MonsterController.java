@@ -10,6 +10,8 @@ import com.maple.back.service.MonsterService;
 import lombok.RequiredArgsConstructor;
 
 import com.maple.back.entity.Monster;
+import com.maple.back.mappingInterface.MonsterSimple;
+
 import java.util.List;
 
 
@@ -32,7 +34,7 @@ public class MonsterController {
   }
 
   @GetMapping(path="/monster", params="search")
-  public List<Monster> searchMonster (@RequestParam String search) {
+  public List<MonsterSimple> searchMonster (@RequestParam String search) {
     return monsterService.searchMonster(search);
   }
   

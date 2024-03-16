@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 
 import com.maple.back.repository.MonsterRepository;
 import com.maple.back.entity.Monster;
+import com.maple.back.mappingInterface.MonsterSimple;
+
 import java.util.List;
 
 @Service
@@ -24,7 +26,7 @@ public class MonsterService {
   }
 
   // 이름으로 몬스터 기본 정보 출력
-  public List<Monster> searchMonster (String query) {
-    return monsterRepo.findByNameContaining(query);
+  public List<MonsterSimple> searchMonster (String query) {
+    return monsterRepo.searchMonster(query);
   }
 }
