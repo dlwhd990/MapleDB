@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Mainpage from "./pages/Mainpage";
 import MonsterDetailPage from "./pages/MonsterDetailPage";
+import ItemDetailPage from "./pages/ItemDetailPage";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Mainpage />} />
         <Route path="/monster/detail/:id" element={<MonsterDetailPage />} />
+        <Route path="/item/detail/:id" element={<ItemDetailPage />} />
       </Routes>
     </BrowserRouter>
   );
