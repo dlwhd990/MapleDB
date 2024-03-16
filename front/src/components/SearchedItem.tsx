@@ -1,13 +1,12 @@
 import styles from "../styles/SearchedItem.module.css";
+import { Monster } from "../types/interface";
 
-const SearchedItem = () => {
+// 3월 16일 monster, item 인터페이스 작성 후 여기 채워넣기부터 시작
+const SearchedItem: React.FC<{ item: Monster }> = ({ item }) => {
   return (
     <div className={styles.box}>
-      <img
-        src="https://maplestory.io/api/gms/62/mob/100101/render/move"
-        alt="searched_item"
-      />
-      <p>파란 달팽이</p>
+      <img src={`${item.image}`} alt="searched_item" />
+      <p>{item.name}</p>
     </div>
   );
 };
