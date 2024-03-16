@@ -1,0 +1,24 @@
+.monster_page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffd1dc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10rem 3rem;
+}
+
+.monster_page section {
+  min-height: 70vh;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.monster_info {
+  width: 20%;
+}
+
+.item_info {
+  width: 78%;
+}
