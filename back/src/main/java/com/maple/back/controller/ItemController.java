@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.maple.back.entity.Item;
+import com.maple.back.mappingInterface.ItemSimple;
 import com.maple.back.service.ItemService;
 
 import lombok.RequiredArgsConstructor;
@@ -26,7 +27,7 @@ public class ItemController {
 
   // 이름으로 검색한 결과
   @GetMapping(path = "/item", params = "search")
-  public List<Item> searchItem(@RequestParam String search) {
+  public List<ItemSimple> searchItem(@RequestParam String search) {
       return itemService.searchItem(search);
   }
   

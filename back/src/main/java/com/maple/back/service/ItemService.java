@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.maple.back.entity.Item;
+import com.maple.back.mappingInterface.ItemSimple;
 import com.maple.back.repository.ItemRepository;
 import java.util.List;
 
@@ -18,8 +19,8 @@ public class ItemService {
   }
 
   // 아이템 검색
-  public List<Item> searchItem(String query) {
-    return itemRepo.findByNameContaining(query);
+  public List<ItemSimple> searchItem(String query) {
+    return itemRepo.searchItem(query);
   }
   
 }
