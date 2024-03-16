@@ -30,6 +30,12 @@ public class ItemController {
   public List<ItemSimple> searchItem(@RequestParam String search) {
       return itemService.searchItem(search);
   }
+
+  // 몬스터 아이디로 드랍 아이템 목록 불러오기
+  @GetMapping(path="/item/drop",params="monsterid")
+  public List<Item> searchDropItem(@RequestParam Long monsterid) {
+    return itemService.searchDropItem(monsterid);
+  }
   
   
 }

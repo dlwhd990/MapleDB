@@ -23,6 +23,10 @@ public class ItemRequire {
   private Boolean poss_magician;
   private Boolean poss_thief;
 
+  @OneToOne
+  @JoinColumn(name="item_id",nullable = false)
+  private Item item;
+
   @Override
   public String toString() {
     return "ItemRequire [id=" + id + ", req_level=" + req_level + ", req_strong=" + req_strong + ", req_dex=" + req_dex
@@ -30,10 +34,6 @@ public class ItemRequire {
         + poss_beginner + ", poss_warrior=" + poss_warrior + ", poss_bowman=" + poss_bowman + ", poss_magician="
         + poss_magician + ", poss_thief=" + poss_thief + "]";
   }
-
-  @OneToOne
-  @JoinColumn(name="item_id",nullable = false)
-  private Item item;
 
   public Integer getId() {
     return id;

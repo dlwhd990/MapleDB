@@ -22,5 +22,10 @@ public class ItemService {
   public List<ItemSimple> searchItem(String query) {
     return itemRepo.searchItem(query);
   }
+
+  // 몬스터 아이디로 드랍 아이템 목록 불러오기
+  public List<Item> searchDropItem(Long monster_id) {
+    return itemRepo.searchDropItem(monster_id);
+  }
   
 }
